@@ -24,10 +24,10 @@ const initialState: TarefasState = {
     },
     {
       id: 3,
-      descricao: 'Estudar o uso do useState',
+      descricao: 'Estudar o uso de types no TypeScript',
       prioridade: enums.Prioridade.IMPORTANTE,
-      status: enums.Status.PENDENTE,
-      titulo: 'Estudar React'
+      status: enums.Status.CONCLUIDA,
+      titulo: 'Estudar TypeScript'
     }
   ]
 }
