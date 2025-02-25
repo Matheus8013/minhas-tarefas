@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
 import * as enums from '../../utils/enums/Tarefas'
+import { Botao } from '../../styles'
 
 //Adicionando um Prop para tag, para alterar a cor de cada etiqueta
 type TagProps = {
@@ -30,12 +31,18 @@ export const Card = styled.div`
   padding: 16px;
   margin-bottom: 32px;
   border-radius: 16px;
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
 `
 
 export const Titulo = styled.h3`
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-left: 8px;
 `
 
 export const Tag = styled.span<TagProps>`
@@ -66,18 +73,6 @@ export const Descricao = styled.textarea`
 export const BarraAcoes = styled.div`
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 16px;
-`
-
-export const Botao = styled.button`
-  font-size: 12px;
-  color: #fff;
-  font-weight: bold;
-  padding: 8px 12px;
-  cursor: pointer;
-  border: none;
-  background-color: #2f3649;
-  border-radius: 8px;
-  margin-right: 8px;
 `
 
 export const BotaoCancelarRemover = styled(Botao)`
