@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 
 import * as S from './styles'
 
+// eslint-disable-next-line
 import * as enums from '../../utils/enums/Tarefas'
 
 import { remover, editar } from '../../store/reducers/tarefas'
